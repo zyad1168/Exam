@@ -606,7 +606,15 @@ h6 {
     background-color: #3f30b1;
 }
 
-
+.pic .about_pic {
+    border-radius: 15px;
+    width: 170px;
+    height: 100px;
+    background-color: #eeeeee;
+    left: -40px;
+    bottom: -20px;
+    box-shadow: 0 8px 25px rgba(32, 21, 49, 0.2);
+}
 .special_green  .about_pic,
 .special_yellow  .about_pic {
     border-radius: 15px;
@@ -619,15 +627,7 @@ h6 {
     box-shadow: 0 8px 25px rgba(32, 21, 49, 0.2);
 }
 
-.pic .about_pic {
-    border-radius: 15px;
-    width: 170px;
-    height: 100px;
-    background-color: #eeeeee;
-    left: -40px;
-    bottom: -20px;
-    box-shadow: 0 8px 25px rgba(32, 21, 49, 0.2);
-}
+
 
 
 /* Testimonials */
