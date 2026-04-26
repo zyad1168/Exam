@@ -607,11 +607,12 @@ h6 {
 }
 
 
-.special_green .pic .about_pic,
-.special_yellow .pic .about_pic {
+.special_green  .about_pic,
+.special_yellow  .about_pic {
     border-radius: 15px;
     width: 160px;
     height: 100px;
+    position: absolute;
     background-color: #eeeeee;
     right: -10px;
     bottom: -20px;
