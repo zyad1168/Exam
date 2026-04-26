@@ -606,25 +606,16 @@ h6 {
     background-color: #3f30b1;
 }
 
-.pic .about_pic {
-    border-radius: 15px;
-    width: 170px;
-    height: 100px;
-    background-color: #eeeeee;
-    left: -40px;
-    bottom: -20px;
-    box-shadow: 0 8px 25px rgba(32, 21, 49, 0.2);
+.pic {
+    position: relative;
 }
-.special_green  .about_pic,
-.special_yellow  .about_pic {
-    border-radius: 15px;
-    width: 160px;
-    height: 100px;
+
+.special_green .about_pic,
+.special_yellow .about_pic {
     position: absolute;
-    background-color: #eeeeee;
     right: -10px;
     bottom: -20px;
-    box-shadow: 0 8px 25px rgba(32, 21, 49, 0.2);
+    left: auto;
 }
 
 
