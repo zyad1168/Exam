@@ -15,12 +15,15 @@ h6 {
     --main-color-p: #D7D5E3;
 }
 
-
-
-
 .main-color-p {
     color: var(--main-color-p);
 }
+
+::selection {
+   background-color: var(--main-color);
+    color: white;
+}
+
 
 /* navbar  */
 
@@ -48,37 +51,7 @@ h6 {
     transform: translateX(-70%);
 }
 
-@media (max-width: 1300px) {
-    .menu-bar {
-        width: 900px;
-        transform: translateX(-55%);
-    }
-}
 
-@media (max-width: 1200px) {
-    .menu-bar {
-        width: 900px;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 992px) {
-    .menu-bar {
-        width: 700px;
-        transform: translateX(0%);
-    }
-}
-
-@media (max-width: 868px) {
-    .menu-bar {
-        width: 100%;
-        left: 0;
-        transform: none;
-        max-height: 80vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-}
 
 .vila1 {
     background-image: url(../Images/lux.jpg);
@@ -522,7 +495,8 @@ h6 {
 
 }
 
-.buy .about_pic {
+.buy .about_pic,
+.special_yellowGreen .pic .about_pic {
     border-radius: 15px;
     width: 140px;
     height: 100px;
@@ -612,17 +586,6 @@ h6 {
     background-color: #ebb043;
 }
 
-.special_yellow .pic .about_pic {
-    border-radius: 15px;
-    width: 140px;
-    height: 100px;
-    background-color: #eeeeee;
-    left: -40px;
-    bottom: -20px;
-    box-shadow: 0 8px 25px rgba(32, 21, 49, 0.2);
-}
-
-
 .special_blue i {
     color: #4F39F6;
 }
@@ -643,9 +606,11 @@ h6 {
     background-color: #3f30b1;
 }
 
-.pic .about_pic,.special_green .pic .about_pic {
+
+.special_green .pic .about_pic,
+.special_yellow .pic .about_pic {
     border-radius: 15px;
-    width: 140px;
+    width: 160px;
     height: 100px;
     background-color: #eeeeee;
     right: -10px;
@@ -653,6 +618,15 @@ h6 {
     box-shadow: 0 8px 25px rgba(32, 21, 49, 0.2);
 }
 
+.pic .about_pic {
+    border-radius: 15px;
+    width: 170px;
+    height: 100px;
+    background-color: #eeeeee;
+    left: -40px;
+    bottom: -20px;
+    box-shadow: 0 8px 25px rgba(32, 21, 49, 0.2);
+}
 
 
 /* Testimonials */
@@ -1079,6 +1053,11 @@ textarea {
 
 }
 
+.form-select {
+    padding: 15px;
+    font-weight: 700;
+}
+
 /* finally-footer */
 .finally-footer {
     background: linear-gradient(to left, #532495, #4e247e);
@@ -1115,4 +1094,37 @@ textarea {
 
 .finally-footer hr {
     color: #6a4d8a;
+}
+
+/* media  */
+@media (max-width: 1300px) {
+    .menu-bar {
+        width: 900px;
+        transform: translateX(-55%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .menu-bar {
+        width: 900px;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-bar {
+        width: 700px;
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 868px) {
+    .menu-bar {
+        width: 100%;
+        left: 0;
+        transform: none;
+        max-height: 80vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }
